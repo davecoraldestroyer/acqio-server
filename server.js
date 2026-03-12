@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require("cors");
 
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 8080;
 
 app.use(cors()); // Erlaubt Anfragen vom Browser
 app.use(express.json({ limit: "10mb" })); // Grosse Dokumente erlauben
